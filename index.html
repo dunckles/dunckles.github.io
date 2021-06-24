@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/style.index.css">
+      <link rel="stylesheet" type="text/css" href="css/navbar.css">
+
+      <link rel="icon" href="img/logo.png">
+      
+
+      <script language='JavaScript'>
+      var txt="|| << PondokKoding >> ";
+      var speed=300;
+      var refresh=null;
+      function action() { 
+        document.title=txt;
+         txt=txt.substring(1,txt.length)+txt.charAt(0);
+         refresh=setTimeout("action()",speed);}
+        action();
+    </script>
+    </head>
+    <body>
+    <audio src="audio/sfxPK.mp3" type="audio/mpeg" autoplay loop></audio>
+<!-- navigasi for all page -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <a class="navbar-brand" href="home.html">
+          <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+          <input type="button" id="kodelogo" src="home.html" value="&lt;PondokKoding&gt;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"><font id="lisnav">Home</font> <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ourservices.html"><font id="lisnav">Our Services</font></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ourteams.html"><font id="lisnav">Our Teams</font></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html"><font id="lisnav">About Us</font></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html"><font id="lisnav">Login</font></a>
+            </li>
+           </ul>
+        </div>
+      </nav>
+<!-- batas akhir navigasi -->
+     
+<!-- slider awal  -->
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <img src="img/c.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>C++</h5>
+              <p><a class="desc-caro" href="https://en.wikipedia.org/wiki/C%2B%2B" target="_blank">Bahasa pemrograman komputer yang di buat oleh Bjarne Stroustrup, yang merupakan perkembangan dari bahasa C dikembangkan di Bell Labs (Dennis Ritchie) pada awal tahun 1970-an, bahasa itu diturunkan dari bahasa sebelumnya, yaitu B. Pada awalnya, bahasa tersebut dirancang sebagai bahasa pemrograman yang dijalankan pada sistem Unix.</a></p>
+            </div>
+          </div>
+          <div class="carousel-item active">
+            <img src="img/h.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>HTML</h5>
+              <p><a class="desc-caro" href="https://en.wikipedia.org/wiki/HTML" target="_blank">Bahasa markah standar untuk dokumen yang dirancang untuk ditampilkan di peramban internet. Ini dapat dibantu oleh teknologi seperti Cascading Style Sheets (CSS) dan bahasa scripting seperti JavaScript dan VBScript.</a><br></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/j.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>JavaScript</h5>
+              <p><a class="desc-caro" href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">Bahasa pemrograman tingkat tinggi dan dinamis.[4] JavaScript populer di internet dan dapat bekerja di sebagian besar penjelajah web populer seperti Google Chrome, Internet Explorer (IE), Mozilla Firefox, Netscape dan Opera.</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- slider akhir -->
+
+<!-- welcome box -->
+      <table id="kotak" border="0" width="95%" align="center" bgcolor="white" cellpadding="3px">
+        <tr>
+          <td align="center">
+            <h1 class="display-4">&lt;Hi, Koders&gt;</h1><br>
+            <p class="lead">PondokKoding hadir untuk memenuhi kebutuhan anda akan jasa coding hampir semua bahasa pemrograman. Untuk Kalian yang punya <br>skill dan pengetahuan tentang dunia IT khususnya dalam bahasa pemrograman maupun web bisa bergabung disini.<br>!!! Just feel free to ask and join us !!!</p>        
+          </td>
+        </tr>
+      </table> 
+<!-- akhir welcome box -->
+
+
+    <center>
+      <a href="order.html">
+        <input id="tombol" type="submit" name="submit" value="Hire Us" />
+      </a>
+    </center>     
+      
+<!-- Footer for all page -->
+    <footer><font class="footer">&lt;PondokKoding&gt; || Copyright &copy; 2K20</font></footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>

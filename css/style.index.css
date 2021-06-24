@@ -1,0 +1,52 @@
+ .carousel {
+ 	margin-top: 5px;
+ 	margin-left: auto;
+ 	margin-right: auto; 	
+ 	height: 300px;
+ }
+
+.carousel-item {
+	width: 90%;
+	height: 300px;
+	margin-top: 0px;
+	margin-left: 70px;
+	margin-bottom: 0px;
+}
+ .carousel-item img {
+ 	border-radius: 9px;
+ 	margin: 0 auto 0 auto;
+ 	height: 300px;
+ }
+
+ .carousel-indicators {
+ 	margin: -60px 0px 0px 0px;
+ }
+
+ .desc-caro {
+ 	color: white;
+ }
+
+#kodelogo {
+	border-style: none; 
+	border-radius: 10px; 
+	color: blue;
+	border: none;
+}
+
+#kotak {
+	text-align: center;
+	font-family: comic sans MS;
+	color: solid black; 
+	border-radius: 10px;
+	background: white;
+	opacity: 85%;
+	margin: 5px auto 0px auto;
+	width: 90%;
+}
+@media (max-width: 576px) {
+	.carousel-item {
+		margin-top: 0px;
+		margin-left: 22px;
+		margin-bottom: 0px;
+	}
+}

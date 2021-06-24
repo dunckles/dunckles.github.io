@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/navbar.css">
+  <link rel="icon" href="img/logo.png">
+  <script language='JavaScript'>
+      var txt="|| << PondokKoding >> ";
+      var speed=300;
+      var refresh=null;
+      function action() { 
+        document.title=txt;
+         txt=txt.substring(1,txt.length)+txt.charAt(0);
+         refresh=setTimeout("action()",speed);}
+        action();
+    </script>
+
+</head>
+<body>
+  <audio src="audio/sfxPK.mp3" type="audio/mpeg" autoplay loop></audio>
+<!-- navigasi for all page -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <a class="navbar-brand" href="home.html">
+          <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+          <input type="button" id="kodelogo" src="home.html" value="&lt;PondokKoding&gt;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"><font id="lisnav">Home</font> <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ourservices.html"><font id="lisnav">Our Services</font></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ourteams.html"><font id="lisnav">Our Teams</font></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html"><font id="lisnav">About Us</font></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html"><font id="lisnav">Login</font></a>
+            </li>
+           </ul>
+        </div>
+      </nav>
+<!-- batas akhir navigasi -->
+
+  <table id="kotak" border="0" width="25%" align="center" bgcolor="white" cellpadding="3px" style="margin-top: 15px; opacity: 60%; border-radius: 8px; ">
+    <tr>
+      <td>
+        <center>
+          <h4>Our Services</h4>
+        </center>
+      </td>
+    </tr>
+  </table>
+
+  <table id="kotak" border="0" width="85%" align="center" bgcolor="white" cellpadding="3px" style="margin-top: 15px; opacity: 60%; border-radius: 8px;">
+    <tr>
+      <td>
+        <center>
+          <h5>Web Programing & Developing</h5>
+        </center>
+        <p>
+          Kami menerima menyediakan jasa pembuatan dan pemasangan website. Website yang kami kerjakan sesuai pasti dengan kebutuhan dan keinginan dari klien. Waktu pengerjaan sesuai dengan perjanjian kontrak yang sudah disetujui antara pihak &lt;PondokKoding&gt; dengan Klien. Untuk pemeliharaan website akan kami pantau setiap 1 bulan sekali. Semua itu akan dibantu oleh anggota kami yang sudah mempunyai skill dan pengalaman yang sangat mumpuni dibidangnya.
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <center>
+          <h5>C++ Programing</h5>
+        </center>  
+        <p>
+          Kami juga menyediakan jasa koding dalam bahasa C++. Programmer dari kami akan membantu anda menghasilkan aplikasi yang anda inginkan dengan resource yang optimal dan efisien tentunya, sehingga aplikasi yang anda inginkan akan bisa dijalankan diplatform dengan spesifikasi hardware yang rendah sekalipun. Selain itu juga, algoritma yang dipakai bisa lebih simple dan mudah dimengerti sehingga akan sangat jarang atau tidak akan ada sama sekali error yang terjadi saat aplikasi erjalan dan dipakai oleh end-user.
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <center>
+          <h5>UI/UX Website dan Aplikasi</h5>
+        </center>  
+        <p>
+          Selain 2 layanan utama kami yang diatas juga kami menyediakan jasa bagi anda yang sudah mempunyai script dari aplikasi maupun eb anda akan tetapi belum ada ide atau konsep untuk tampilan dari Website atau aplikasi anda. Kami menghadirkan jasa make up/pembuatan interface dari web/ aplikasi anda. Dengan tampilan yang cantik dan nayaman untuk end user maupun pengunjung dari website anda sehingga akan banyak user yang tertarik dengan aplikasi/web anda.
+          <br>
+          <center>Klik tombol dibawah untuk menggunakan jasa kami.</center>
+        </p>
+      </td>
+    </tr>
+  </table>
+  
+  <center>
+    <a href="order.html">
+      <input id="tombol" type="submit" name="submit" value="Order Jasa" href="order.html" />
+    </a>
+  </center>     
+  
+<!-- Footer for all page -->
+    <footer><font class="footer">&lt;PondokKoding&gt; || Copyright &copy; 2K20</font></footer>
+<script src="js/jquery.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

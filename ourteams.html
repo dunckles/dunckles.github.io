@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.ourteam.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/navbar.css">
+  <link rel="icon" href="img/logo.png">
+  <script language='JavaScript'>
+      var txt="|| << PondokKoding >> ";
+      var speed=300;
+      var refresh=null;
+      function action() { 
+        document.title=txt;
+         txt=txt.substring(1,txt.length)+txt.charAt(0);
+         refresh=setTimeout("action()",speed);}
+        action();
+    </script>
+
+</head>
+<body>
+  <audio src="audio/sfxPK.mp3" type="audio/mpeg" autoplay loop></audio>
+<!-- navigasi for all page -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <a class="navbar-brand" href="home.html">
+          <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+          <input type="button" id="kodelogo" src="home.html" value="&lt;PondokKoding&gt;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"><font id="lisnav">Home</font> <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ourservices.html"><font id="lisnav">Our Services</font></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ourteams.html"><font id="lisnav">Our Teams</font></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html"><font id="lisnav">About Us</font></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html"><font id="lisnav">Login</font></a>
+            </li>
+           </ul>
+        </div>
+      </nav>
+<!-- batas akhir navigasi -->
+  
+  <section class="team-section">
+     <div class="container">
+         <center><h3><font color="white">Our Teams</font></h3></center>
+         <div class="row">
+             <div class="team-items">
+                  <div class="item">
+                      <img src="img/madi.jpg" alt="team" />
+                      <div class="inner">
+                          <div class="info">
+                               <h1>Madi</h1>
+                               <p>Programer C++<br>Mengedepankan algoritma yang efisien dan optimal untuk membuat program dengan source yang ringan.</p>
+                               <div class="social-links">
+                                   <a href="https://twitter.com" target="_blank"><span class="fa fa-twitter"></span></a>
+                                   <a href="https://www.instagram.com/muhammad.rohmadi.ilham/" target="_blank"><span class="fa fa-instagram"></span></a>
+                                   <a href="https://api.whatsapp.com/send?phone=+6287864123456" target="_blank"><span class="fa fa-whatsapp"></span></a>
+                               </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <img src="img/tito.jpg" alt="team" />
+                      <div class="inner">
+                          <div class="info">
+                               <h1>Tito</h1>
+                               <p>Web Designer<br>Dengan pengalaman dan skill dalam bidang UI/UX mampu membuat tampilan yang sangat nyaman dan enak dilihat.</p>
+                               <div class="social-links">
+                                   <a href="twitter.com" target="_blank"><span class="fa fa-twitter"></span></a>
+                                   <a href="https://www.instagram.com/skinnyfvck_/" target="_blank"><span class="fa fa-instagram"></span></a>
+                                   <a href="https://api.whatsapp.com/send?phone=+6287864123456" target="_blank"><span class="fa fa-whatsapp"></span></a>
+                               </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <img src="img/adit.jpg" alt="team" />
+                      <div class="inner">
+                          <div class="info">
+                               <h1>Adit</h1>
+                               <p>Web Developer<br>Punya skill dalam membuat alur syntax code agar lebih optimal dengan beberapa bahasa web programming yang dikuasainya. </p>
+                               <div class="social-links">
+                                   <a href="twitter.com" target="_blank"><span class="fa fa-twitter"></span></a>
+                                   <a href="https://www.instagram.com/adtya.json/" target="_blank"><span class="fa fa-instagram"></span></a>
+                                   <a href="https://api.whatsapp.com/send?phone=+6287864123456" target="_blank"><span class="fa fa-whatsapp"></span></a>
+                               </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  </section>
+<!-- Footer for all page -->
+    <footer><font class="footer">&lt;PondokKoding&gt; || Copyright &copy; 2K20</font></footer>
+<script src="js/jquery.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

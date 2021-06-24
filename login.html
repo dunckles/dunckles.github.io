@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <link rel="stylesheet" type="text/css" href="css/login.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/navbar.css">
+
+  <link rel="icon" href="img/logo.png">
+
+  <script language='JavaScript'>
+      var txt="|| << PondokKoding >> ";
+      var speed=300;
+      var refresh=null;
+      function action() { 
+        document.title=txt;
+         txt=txt.substring(1,txt.length)+txt.charAt(0);
+         refresh=setTimeout("action()",speed);}
+        action();
+  </script>
+</head>
+<body>
+  <!-- navigasi for all page -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <a class="navbar-brand" href="home.html">
+          <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+          <input type="button" id="kodelogo" src="home.html" value="&lt;PondokKoding&gt;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"><font id="lisnav">Home</font> <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ourservices.html"><font id="lisnav">Our Services</font></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ourteams.html"><font id="lisnav">Our Teams</font></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html"><font id="lisnav">About Us</font></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="order.html"><font id="lisnav">Order</font></a>
+            </li>
+           </ul>
+        </div>
+      </nav>
+<!-- batas akhir navigasi -->
+  <div id="card">
+    <div id="card-content">
+      <div id="card-title">
+        <h2>Client Area</h2>
+        <div class="underline-title"></div>
+      </div>
+      <form method="post" class="form" action="index.html">
+        <label for="username" style="padding-top:13px">
+            &nbsp;Username
+          </label>
+        <input id="username" class="form-content" type="username" name="username" autocomplete="off" required/>
+        <div class="form-border"></div>
+        <label for="user-password" style="padding-top:22px">&nbsp;Password
+          </label>
+        <input id="password" class="form-content" type="password" name="password" required />
+        <div class="form-border"></div>
+        <input id="submit-btn" type="submit" name="submit" value="Login" />
+        <a href="order.html" id="order">Klik ini jika belum punya akun!</a>
+      </form>
+    </div>
+  </div>
+<!-- Footer for all page -->
+    <footer><font class="footer">&lt;PondokKoding&gt; || Copyright &copy; 2K20</font></footer>
+<script src="js/jquery.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

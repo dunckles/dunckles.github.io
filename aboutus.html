@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/navbar.css">
+  <link rel="icon" href="img/logo.png">
+  <script language='JavaScript'>
+      var txt="|| << PondokKoding >> ";
+      var speed=300;
+      var refresh=null;
+      function action() { 
+        document.title=txt;
+         txt=txt.substring(1,txt.length)+txt.charAt(0);
+         refresh=setTimeout("action()",speed);}
+        action();
+    </script>
+
+</head>
+<body>
+  <audio src="audio/sfxPK.mp3" type="audio/mpeg" autoplay loop></audio>
+<!-- navigasi for all page -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <a class="navbar-brand" href="home.html">
+          <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+          <input type="button" id="kodelogo" src="home.html" value="&lt;PondokKoding&gt;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"><font id="lisnav">Home</font> <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ourservices.html"><font id="lisnav">Our Services</font></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ourteams.html"><font id="lisnav">Our Teams</font></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html"><font id="lisnav">About Us</font></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html"><font id="lisnav">Login</font></a>
+            </li>
+           </ul>
+        </div>
+      </nav>
+<!-- batas akhir navigasi -->
+
+  <table id="kotak" border="0" width="25%" align="center" bgcolor="white" cellpadding="3px" style="margin-top: 40px; opacity: 60%; border-radius: 8px; ">
+    <tr>
+      <td>
+        <center>
+          <h4>About Us</h4>
+        </center>
+      </td>
+    </tr>
+  </table>
+
+  <table id="kotak" border="0" width="85%" height="400px" align="center" bgcolor="white" cellpadding="20px" style="margin-top: 35px; opacity: 60%; border-radius: 8px; margin-bottom: 45px;">
+    <tr>
+      <td>
+        <center>
+          <h5>Web Programing & Developing</h5>
+        </center>
+        <br><br>
+        <p align="right" style="font-size: 18px;">
+          Kami adalah StartUp digital dalam bidang IT,<br> spesifiknya dalam bidang bahasa pemrograman. Disini kami menawarkan <br>jasa kami sesuai dengan kemampuan dan pengalaman yang kami punya. Untuk waktu<br> pengerjaan projek tergantung dari tingkat kesulitan dan konsep secara keseluruhan. Tim kami akan selalu<br> tetap bisa berkomunikasi dengan klien terkait projek yangs sedang dikerjakan minimal 1xseminggu. Selain<br> memberikan pelayanan jasa, kami juga menrima pelatihan untuk anda yang ingin mendalami bahasa pemrograman C++<br> maupun HTML, bahkan anda juga bisa mejadi salah satu bagian dari tim kami dengan kualifikasi yang sudah kami tentukan sendiri.
+        </p>
+        <p align="center">Hubungi kami : <a href="mailto:admin@pondokKoding.com">admin@pondokKoding.com</a></p>
+      </td>
+    </tr>
+  </table>
+  
+
+<!-- Footer for all page -->
+    <footer><font class="footer">&lt;PondokKoding&gt; || Copyright &copy; 2K20</font></footer>
+<script src="js/jquery.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
